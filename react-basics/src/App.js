@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './component/navbar';
 import React, { useCallback, useState } from 'react';
 import Counter from './component/counter';
+import TodoList from './component/todoList';
 
 function App() {
   const [page, setPage] = useState("Home")
@@ -24,6 +25,7 @@ function App() {
       Callback
       <button onClick={handleClick}>Counter {count}</button>
       <Counter counter={count} increment={increment} decrement={decrement} />
+      <TodoList />
     </div>
   );
 }
