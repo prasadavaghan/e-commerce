@@ -8,12 +8,13 @@ const TodoList = () => {
         setData(e.target.value);
     }
     const addTodo = () => {
-        if
-        setItems(
-            [...items,
-                data,
-            ]
-        )
+        if (data.trim()) {
+            setItems(
+                [...items,
+                    data,
+                ]
+            )
+        }
         setData("")
     }
     console.log(items, data)
@@ -25,7 +26,7 @@ const TodoList = () => {
                 <button onClick={addTodo}>Add todo</button>
             </div>
             <ul>
-                {items.map((item,index) => (
+                {items.map((item, index) => (
                     <li key={index}>{item}</li>
                 ))}
             </ul>
