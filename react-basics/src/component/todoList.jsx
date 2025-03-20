@@ -1,4 +1,5 @@
 import React, { memo, useState } from "react";
+import { Link } from "react-router-dom";
 
 const TodoList = () => {
     const [data, setData] = useState("");
@@ -20,6 +21,11 @@ const TodoList = () => {
     console.log(items, data)
     return (
         <div>
+            <nav>
+                <Link to="/" > Counter</Link>
+                <Link to="/todo" > Todo List</Link>
+                <Link to="/data" > Data Fetch</Link>
+            </nav>
             <h1>Todo List</h1>
             <div>
                 <input type="text" onChange={handleInput} />

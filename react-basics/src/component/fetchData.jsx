@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const DataFetch = () => {
     const [data, setData] = useState(null);
@@ -11,6 +12,12 @@ const DataFetch = () => {
     console.log("users", data);
     return (
         <ul>
+            <nav>
+                <Link to="/" > Counter</Link>
+                <Link to="/todo" > Todo List</Link>
+                <Link to="/data" > Data Fetch</Link>
+
+            </nav>
             {data?.map((item) =>
                 <li>{item.name}</li>
             )}
