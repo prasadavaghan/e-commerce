@@ -4,6 +4,7 @@ import Navbar from './component/navbar';
 import React, { useCallback, useState } from 'react';
 import Counter from './component/counter';
 import TodoList from './component/todoList';
+import DataFetch from './component/fetchData';
 
 function App() {
   const [page, setPage] = useState("Home")
@@ -25,7 +26,8 @@ function App() {
       Callback
       <button onClick={handleClick}>Counter {count}</button>
       <Counter counter={count} increment={increment} decrement={decrement} />
-      <TodoList />
+      {/* <TodoList /> */}
+      <DataFetch />
     </div>
   );
 }
