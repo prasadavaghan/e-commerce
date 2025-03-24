@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const Counter = () => {
     const [page, setPage] = useState("Home")
     const [count, setCount] = useState(0)
-    const myComponent = React.lazy(() => import("../src/component/lazyComponent"))
     function handleClick() {
         setCount(count + 1);
         setPage("Home" ? "test" : "Home")

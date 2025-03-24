@@ -7,16 +7,7 @@ import TodoList from './component/todoList';
 import DataFetch from './component/fetchData';
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 function App() {
-  
   return (
-    // <div>
-    //   <Navbar msg={page} />
-    //   Callback
-    //   
-    //   <Counter counter={count} increment={increment} decrement={decrement} />
-    //   <TodoList />
-    //   <DataFetch />
-    // </div>
     <Router>
       <Routes>
         <Route path='/' element={<Counter />} />
